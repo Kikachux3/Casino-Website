@@ -1,17 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: black;
-    color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: black;
+  color: white;
 }
 
 header {
-    background: gold;
-    padding: 10px;
+  background: gold;
+  padding: 10px;
 }
 
 nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+/* Set the background image to a fullscreen casino floor */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('casino-floor.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px); /* Blur effect */
     color: white;
-    padding: 10px;
+}
+
+/* Lucky Cat Logo */
+.logo {
+    width: 150px; /* Adjust size */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Header and Navigation */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-bottom: 3px solid gold;
+}
+
+nav a {
+    color: gold;
+    padding: 15px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: green;
+}
+
+/* Login & Signup Buttons */
+.btn {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: green;
+    color: white;
 }
