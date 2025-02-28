@@ -33,13 +33,20 @@ body {
 
 /* Lucky Cat Logo */
 .logo {
-    width: 150px; /* Adjust size */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px; /* Adjust size */
     height: auto;
-    display: block;
-    margin: 20px auto;
+    display: float;
+    margin: auto;
     background: url('/images/lucky-cat-logo.jpeg') no-repeat top left;
-
 }
+
+@media (max-width: 768px) {  /* Mobile Optimization */
+    .logo {
+        width: 40px; /* Smaller on mobile */
+    }
 
 /* Header and Navigation */
 header {
