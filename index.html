@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-store">
+     <meta http-equiv="Cache-Control" content="no-store">
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <iframe sandbox="allow-scripts allow-same-origin"></iframe>
-    
+
     <title>Lucky Cat Casino</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="images/lucky-cat-logo.jpeg">
 </head>
 <body>
     <header>
-        <img src="images/lucky-cat-logo.png" alt="Lucky Cat Casino" class="logo">
+        div class="logo-container">
+            <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo" class="logo">
+            <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo" class="logo">
+            <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo" class="logo">
+        </div>
+        
         <nav>
             <a href="games.html">Games</a>
             <a href="signup.html" class="btn">Sign Up</a>
@@ -23,6 +29,19 @@
         </nav>
     </header>
     <main>
+        <div class="form-container">
+            <form class="auth-form">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    
         <h1>Welcome to Lucky Cat Casino!</h1>
         <p>Current Currency: <span id="currency-display">Harmony Coins 🟢</span></p>
         <button id="currency-switch" class="btn">Switch Currency</button>
