@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.env
+config.env
+database.config.js
+api_keys.json
+private_key.pem
+encryption_key.txt
+payment_gateway_credentials.json
+user_data.db
+user_accounts.json
+detailed_error_logs.txt
