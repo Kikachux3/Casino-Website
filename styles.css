@@ -1,5 +1,5 @@
 body {
-    background: url('images/casino-background.jpg') no-repeat center center fixed;
+    background: url('/images/casino-floor.png') no-repeat center center fixed;
     background-size: cover;
     height: 100vh; /* Full height */
     width: 100vw; /* Full width */
@@ -7,26 +7,87 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white; /* Make text readable */
+    color: red; /* Make text readable */
     font-family: Arial, sans-serif;
 }
 
 header {
-  background: gold;
-  padding: 10px;
+    background: gold;
+    padding: 10px;
 }
 
 nav a {
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-}
-.nav-links {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
 }
 
+/* Set the background image to a fullscreen casino floor */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('/images/casino-floor.png') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    /* Blur effect */
+    color: white;
+}
+    /* Make text readable */
+
+text{
+    color: blue !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    }
+
+/* Small logo at the top, cascading left to right */
+.logo-container {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust size */
+    height: auto;
+    margin-right: 10px;
+}
+/* Lucky Cat Logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px; /* Smaller size */
+    height: auto;
+    display: float;
+    margin: auto;
+    background: url('images/lucky-cat-logo.jpeg') no-repeat center center fixed;
+} 
+
+@media (max-width: 768px) {
+    .logo {
+        width: 40px; /* Smaller on mobile */
+    }
+ 
+    
+/* Header and Navigation */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-bottom: 3px solid gold;
+}
+
+nav a {
+    color: gold;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: green;
+}
 .nav-links {
     position: absolute;
     top: 20px;
@@ -50,61 +111,6 @@ nav a {
     color: white;
 }
 
-/* Set the background image to a fullscreen casino floor */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url('images/casino-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    filter: blur(5px);
-    /* Blur effect */
-    color: white;
-}
-    /* Make text readable */
-
-text{
-    color: blue !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    }
-
-/* Lucky Cat Logo */
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 60px; /* Smaller size */
-    height: auto;
-    display: float;
-    margin: auto;
-    background: url('/images/lucky-cat-logo.jpeg') no-repeat top left;
-    }
-
-@media (max-width: 768px) {
-    .logo {
-        width: 40px; /* Smaller on mobile */
-    }
-}  
-
-/* Header and Navigation */
-header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-bottom: 3px solid gold;
-}
-
-nav a {
-    color: gold;
-    padding: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: green;
-}
-
 /* Login & Signup Buttons */
 .btn {
     background-color: gold;
@@ -121,33 +127,78 @@ nav a:hover {
     color: white;
 }
 
-.game-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
+    .game-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
 
-.game {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 10px;
-}
+    .game {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 10px;
+    }
 
-.game img {
-    width: 100px;
-    height: auto;
-}
+    .game img {
+        width: 100px;
+        height: auto;
+    }
 
-.game button {
-    background-color: gold;
+    .game button {
+        background-color: gold;
+        color: black;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .game button:hover {
+        background-color: green;
+    }
+    
+/* White Box for Forms */
+.form-container {
+    background: white;
     color: black;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
 }
 
-.game button:hover {
-    background-color: green;
+/* Form Styling */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
+    /* Admin Panel */
+    .admin-panel {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    .admin-option {
+        background: #222;
+        color: white;
+        padding: 15px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .admin-option:hover {
+        background: #444;
+    }
