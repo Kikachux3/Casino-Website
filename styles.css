@@ -31,7 +31,8 @@ body {
     height: auto;
     display: block;
     margin: 20px auto;
-    url('lucky-cat-logo.jpeg') repeat top left;
+    background: url('/images/lucky-cat-logo.jpeg') no-repeat top left;
+
 }
 
 /* Header and Navigation */
