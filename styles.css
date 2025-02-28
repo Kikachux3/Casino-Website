@@ -54,16 +54,19 @@ nav a {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background:url('https://replit.com/@kikifallsinreve/Casino-Website#images/casino-floor.png');no-repeat center center fixed;
+    background: url('/images/casino-floor.png') no-repeat center center fixed;
+    background-size: cover;
     filter: blur(5px);
     /* Blur effect */
     color: white;
+}
+    /* Make text readable */
 
-     background-image: url('https://replit.com/@kikifallsinreve/Casino-Website#images/casino-floor.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     height: 100vh;
+text{
+    color: blue !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
     }
 
 /* Lucky Cat Logo */
