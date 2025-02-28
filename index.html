@@ -8,16 +8,20 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Casino Royale</h1>
+        <img src="lucky-cat-logo.png" alt="Lucky Cat Casino" class="logo">
         <nav>
             <a href="games.html">Games</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="signup.html" class="btn">Sign Up</a>
+            <a href="login.html" class="btn">Login</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <p>Enjoy exciting casino games for free!</p>
-        <button onclick="alert('Coming Soon!')">Play Now</button>
+        <h1>Welcome to Lucky Cat Casino!</h1>
+        <p>Current Currency: <span id="currency-display">Harmony Coins 🟢</span></p>
+        <button id="currency-switch" class="btn">Switch Currency</button>
+        <p>Try your luck with our exciting games and virtual coins!</p>
+        <button class="btn" onclick="alert('Games Coming Soon!')">Play Now</button>
     </main>
     <script src="script.js"></script>
 </body>
