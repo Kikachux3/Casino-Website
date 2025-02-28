@@ -21,6 +21,28 @@ nav a {
   padding: 10px;
   text-decoration: none;
 }
+.nav-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-links a {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: green;
+    color: white;
+}
+
 /* Set the background image to a fullscreen casino floor */
 body {
     font-family: Arial, sans-serif;
