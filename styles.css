@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+header {
+    background: gold;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
