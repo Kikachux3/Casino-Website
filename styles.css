@@ -1,5 +1,5 @@
 body {
-    background: url('/images/casino-floor.png') no-repeat center center fixed;
+    background: url('images/casino-floor.png') no-repeat center center fixed;
     background-size: cover;
     height: 100vh; /* Full height */
     width: 100vw; /* Full width */
