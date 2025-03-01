@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="images/lucky-cat-logo.jpeg">
+    <script>
+        // Redirect if user is not an admin (for security)
+        if (!sessionStorage.getItem("adminLoggedIn")) {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="logo-container">
+    <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo">
+    <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo">
+    <img src="images/lucky-cat-logo.jpeg" alt="Lucky Cat Logo">
+</div>
+
+<div class="admin-panel">
+    <h2>Admin Dashboard</h2>
+    <div class="admin-option" onclick="location.href='user-management.html'">Manage Users</div>
+    <div class="admin-option" onclick="location.href='analytics.html'">View Analytics</div>
+    <div class="admin-option" onclick="location.href='edit-site.html'">Edit Site</div>
+    <div class="admin-option" onclick="logout()">Logout</div>
+</div>
+
+<script>
+    function logout() {
+        sessionStorage.removeItem("adminLoggedIn");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>
